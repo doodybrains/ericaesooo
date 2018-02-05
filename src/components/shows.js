@@ -13,7 +13,7 @@ class Shows extends React.Component {
     axios
       .get(`https://cdn.contentful.com/spaces/${process.env.GATSBY_CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN}&content_type=show`)
       .then((res) => {
-        this.setState({ data: res.data.items[0]})
+        this.setState({ data: res.data.items})
       })
       .catch((error) => {
         this.setState({ data: error})
@@ -21,16 +21,22 @@ class Shows extends React.Component {
   }
 
   render() {
+    const {data} = this.state;
     return (
-      <div id="shows" className="section shows">
-        {this.state.data ? (
-          <div className="container">
+      <div id="shows" className="section">
+        {data ? (
+          <div className="show-wrapper">
             <h1>Shows</h1>
-            <div className="item-wrapper">
-              <ShowItem data={this.state.data} />
+            <div className="all-shows">
+              {data.map((show, i) => {
+                return (
+                  <div key={i} className="show">
+                    <ShowItem data={show} />
+                  </div>
+                )
+              })}
             </div>
           </div>
-
         ) : (<h1>loading</h1>)}
       </div>
     )

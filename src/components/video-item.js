@@ -2,9 +2,9 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 
 const VideoItem = (props) => (
-  <div>
+  <div className="player-wrapper">
     <h2>{props.data.fields.title}</h2>
-    <ReactPlayer url={props.data.fields.videoUrl} />
+    <ReactPlayer width='100%' height='100%' url={props.data.fields.videoUrl} />
   </div>
 )
 

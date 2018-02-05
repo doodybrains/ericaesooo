@@ -20,4 +20,19 @@
       width: 48%;
     }
   }
+  .watch-wrapper {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .player-wrapper {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

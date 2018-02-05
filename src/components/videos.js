@@ -25,7 +25,7 @@ class Videos extends React.Component {
     return (
       <div id="watch" className="section">
         {data ? (
-          <div>
+          <div className="watch-wrapper">
             <h1>Videos</h1>
             <div className="all-videos">
               {data.map((vid, i) => {

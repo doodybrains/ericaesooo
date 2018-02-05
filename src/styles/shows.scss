@@ -2,4 +2,27 @@
   .container {
     padding: 0 20px;
   }
+  
+  h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .show-item {
+    text-decoration: none;
+    color: black !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: left;
+
+    div {
+      width: 25%;
+    }
+  }
+
+  .show-wrapper {
+    width: 100%;
+  }
 }

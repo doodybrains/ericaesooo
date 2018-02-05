@@ -54,9 +54,9 @@ body {
 }
 
 .outer-wrapper {
-  // font-family: 'Bangers', cursive;
   font-family: 'Ubuntu Mono', monospace;
-
+  width: 100%;
+  overflow: hidden;
   color: black !important;
 }
 
@@ -71,13 +71,9 @@ body {
   left: 0;
   right: 0;
   background: rgba(255,255,255,.7);
+  z-index: 9999;
 
   a {
-    // color: #ff0000;
-    // color: #3399cc;
-    // color: #ffff00;
-    // color: #33cc99;
-    // color: hotpink;
     cursor: pointer;
     display: block;
     padding: 0 20px;

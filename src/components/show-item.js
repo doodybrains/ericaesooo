@@ -1,12 +1,12 @@
 import React from 'react'
 
 const ShowItem = (props) => (
-  <div className="show-item">
-    <h2>{props.data.fields.description}</h2>
-    <h3>{props.data.fields.date}</h3>
-    <h4>{props.data.fields.venue}</h4>
-    <p>{props.data.fields.otherPerformers}</p>
-  </div>
+  <a href={props.data.fields.link} target="_blank" className="show-item">
+    <div>{props.data.fields.description}</div>
+    <div>{props.data.fields.date}</div>
+    <div>{props.data.fields.venue}</div>
+    <div>{props.data.fields.otherPerformers}</div>
+  </a>
 )
 
 

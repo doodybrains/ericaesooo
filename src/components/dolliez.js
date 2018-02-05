@@ -14,28 +14,28 @@ class Dolliez extends React.Component {
         <div id="circle-orbit-container">
 
           <h1>FOUR DOLLIES</h1>
-          <div id="inner-inner-orbit">
+          <div className="orbit" id="inner-inner-orbit">
             <div className="inner-inner-orbit-circles">
-              <img src={dalai} />
+              <div className="image-wrapper"><img src={dalai} /></div>
             </div>
           </div>
 
 
-          <div id="inner-orbit">
+          <div className="orbit" id="inner-orbit">
             <div className="inner-orbit-cirlces">
-              <img src={dollyp} />
+              <div className="image-wrapper"><img src={dollyp} /></div>
             </div>
           </div>
 
-          <div id="middle-orbit">
+          <div className="orbit" id="middle-orbit">
             <div className="middle-orbit-cirlces">
-                <img src={dollys} />
+                <div className="image-wrapper"><img src={dollys} /></div>
             </div>
           </div>
 
-          <div id="outer-orbit">
+          <div className="orbit" id="outer-orbit">
             <div className="outer-orbit-cirlces">
-                <img src={dali} />
+                <div className="image-wrapper"><img src={dali} /></div>
             </div>
           </div>
 
