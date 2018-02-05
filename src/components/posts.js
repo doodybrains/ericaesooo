@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import PostItem from './post-item'
-import './posts.scss'
+import '../styles/posts.scss'
 
 class Posts extends React.Component {
   constructor() {

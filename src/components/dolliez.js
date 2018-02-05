@@ -1,5 +1,5 @@
 import React from 'react'
-import './dolliez.scss'
+import '../styles/dolliez.scss'
 import dalai from './dalai.jpg';
 import dollyp from './dolly-p.jpg';
 import dollys from './dolly-s.jpg';

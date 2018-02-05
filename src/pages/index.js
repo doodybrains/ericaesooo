@@ -4,7 +4,7 @@ import Posts from '../components/posts'
 import Grid from '../components/grid'
 import Dolliez from '../components/dolliez'
 import Banner from '../components/banner'
-import './index.scss'
+import '../styles/home.scss'
 
 const IndexPage = () => (
   <div className="main-wrapper">

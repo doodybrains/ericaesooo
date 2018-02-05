@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import './banner.scss'
+import '../styles/banner.scss'
 
 class Banner extends React.Component {
   constructor() {

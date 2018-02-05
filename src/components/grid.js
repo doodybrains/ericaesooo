@@ -1,5 +1,5 @@
 import React from 'react'
-import './grid.scss'
+import '../styles/grid.scss'
 
 const Grid = () => (
       <section className="lyric-grid">
