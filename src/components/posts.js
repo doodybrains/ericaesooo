@@ -11,7 +11,7 @@ class Posts extends React.Component {
 
   componentWillMount() {
     axios
-      .get(`https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.CONTENTFUL_ACCESS_TOKEN}&content_type=post`)
+      .get(`https://cdn.contentful.com/spaces/${process.env.GATSBY_CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN}&content_type=post`)
       .then((res) => {
         this.setState({ data: res.data.items[0]})
       })

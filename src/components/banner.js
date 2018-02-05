@@ -10,7 +10,7 @@ class Banner extends React.Component {
 
   componentWillMount() {
     axios
-      .get(`https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.CONTENTFUL_ACCESS_TOKEN}&content_type=banner`)
+      .get(`https://cdn.contentful.com/spaces/${process.env.GATSBY_CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN}&content_type=banner`)
       .then((res) => {
         this.setState({ data: res.data.items[0]})
       })
