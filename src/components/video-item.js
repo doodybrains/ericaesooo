@@ -1,14 +1,11 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
 
-const VideoItem = () => ( 
+const VideoItem = (props) => (
   <div>
-    <h2>{this.props.data.fields.description}</h2>
-    <h3>{this.props.data.fields.date}</h3>
-    <h4>{this.props.data.fields.venue}</h4>
-    <p>{this.props.data.fields.otherPerformers}</p>
+    <h2>{props.data.fields.title}</h2>
+    <ReactPlayer url={props.data.fields.videoUrl} />
   </div>
 )
-
-
 
 export default VideoItem

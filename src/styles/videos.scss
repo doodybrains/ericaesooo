@@ -1,0 +1,23 @@
+
+#watch {
+  .container {
+    padding: 0 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  .all-videos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .vid {
+      width: 48%;
+    }
+  }
+}

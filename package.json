@@ -11,7 +11,8 @@
     "gatsby-plugin-postcss-sass": "latest",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "lost": "^8.0.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-player": "^1.1.1"
   },
   "keywords": [
     "gatsby"
