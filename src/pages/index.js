@@ -13,10 +13,10 @@ const IndexPage = () => (
     <Banner />
     <Songs />
     <Shows />
-    <Videos />
-    <Dolliez />
-    <Posts />
     <Grid />
+    <Posts />
+    <Dolliez />
+    <Videos />
   </div>
 )
 

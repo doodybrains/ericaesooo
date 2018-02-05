@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import ShowItem from './show-item'
+import '../styles/shows.scss'
 
 class Shows extends React.Component {
   constructor() {
