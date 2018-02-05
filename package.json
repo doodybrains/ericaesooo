@@ -19,6 +19,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "postinstall": "npm rebuild node-sass",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
