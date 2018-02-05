@@ -9,8 +9,9 @@
     "gatsby-cli": "^1.1.34",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
-    "gatsby-plugin-sass": "^1.0.16",
-    "react-helmet": "^5.2.0"
+    "gatsby-plugin-postcss-sass": "latest",
+    "react-helmet": "^5.2.0",
+    "lost": "^8.0.0"
   },
   "keywords": [
     "gatsby"

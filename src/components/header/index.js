@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import '../styles/index.scss'
+import '../../styles/index.scss'
 const Header = () => (
   <div className="header">
     <a href="#shows">shows</a>

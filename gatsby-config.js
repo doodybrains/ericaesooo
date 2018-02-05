@@ -1,6 +1,16 @@
+const lost = require(`lost`)
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
-  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass'],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-postcss-sass`,
+      options: {
+        postCssPlugins: [lost()],
+      },
+    },
+    'gatsby-plugin-react-helmet',
+  ],
 };
