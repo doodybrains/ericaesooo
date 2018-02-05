@@ -1,0 +1,65 @@
+.lyric-grid {
+  background: url("https://raw.githubusercontent.com/doodybrains/eso-clean/master/source/images/large-grid-pink.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  #shuffle {
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    width: 100%;
+    overflow: hidden;
+    height: 150vh;
+    &:before {
+      content: "";
+      display: table;
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    *zoom: 1;
+    > div {
+      color: #000;
+      padding: 20px 10px;
+      float: left;
+      font-size: .575em;
+      width: 25%;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: all .25s;
+      transition: all .25s;
+      box-sizing: border-box;
+      &:hover {
+        font-size: .73em;
+        font-weight: bold;
+      }
+      &.magnify {
+        color: #46FFD0;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      &.turn {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      &.tilt {
+        color: #9D0AFF;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      &.back {
+        color: #9D0AFF;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

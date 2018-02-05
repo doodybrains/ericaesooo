@@ -1,0 +1,25 @@
+.banner {
+  background: rgba(255,255,255,.5);
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 74px);
+
+  p {
+    color: black;
+    margin: 3px auto;
+
+    &.maintext {
+      font-size: 1em;
+      margin-bottom: 12px;
+    }
+    &.subtext {
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      font-size: .75em;
+    }
+  }
+}
