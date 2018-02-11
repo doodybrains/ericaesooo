@@ -9,7 +9,7 @@ class Dolliez extends React.Component {
   render() {
 
     return (
-      <div className="section">
+      <div className="section dolly-wrapper">
 
         <div id="circle-orbit-container">
 

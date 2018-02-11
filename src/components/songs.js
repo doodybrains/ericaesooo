@@ -26,7 +26,7 @@ class Songs extends React.Component {
     return (
       <div id="listen" className="section">
         {data ? (
-          <div>
+          <div className="container">
             <h1>Tracks</h1>
             <div className="all-tracks">
               {data.map((song, i) => {
