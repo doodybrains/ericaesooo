@@ -22,19 +22,25 @@ class Shows extends React.Component {
 
   render() {
     const {data} = this.state;
-    console.log(data);
+    let allShows = null;
 
     if (data) {
-      console.log(data[0].fields.currentShows)
+      allShows = data[0].fields.currentShows;
     }
 
     return (
       <div id="shows" className="section">
         {data ? (
-          <div className="show-wrapper">
+          <div className="container show-wrapper">
             <h1>Shows</h1>
             <div className="all-shows">
-              this section is coming soon...
+              {allShows.map((show, i) => {
+                return (
+                  <div key={i}>
+                    <ShowItem id={show.sys.id} />
+                  </div>
+                );
+              })}
             </div>
           </div>
         ) : (<h1>loading</h1>)}
