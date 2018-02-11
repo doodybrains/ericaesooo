@@ -21,7 +21,6 @@ class Banner extends React.Component {
   }
 
   render() {
-    console.log(this.state.data);
     return (
       <div>
         {this.state.data ? (

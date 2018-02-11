@@ -11,7 +11,7 @@ class Shows extends React.Component {
 
   componentWillMount() {
     axios
-      .get(`https://cdn.contentful.com/spaces/${process.env.GATSBY_CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN}&content_type=show`)
+      .get(`https://cdn.contentful.com/spaces/${process.env.GATSBY_CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN}&content_type=allShows`)
       .then((res) => {
         this.setState({ data: res.data.items})
       })
@@ -22,19 +22,19 @@ class Shows extends React.Component {
 
   render() {
     const {data} = this.state;
+    console.log(data);
+
+    if (data) {
+      console.log(data[0].fields.currentShows)
+    }
+
     return (
       <div id="shows" className="section">
         {data ? (
           <div className="show-wrapper">
             <h1>Shows</h1>
             <div className="all-shows">
-              {data.map((show, i) => {
-                return (
-                  <div key={i} className="show">
-                    <ShowItem data={show} />
-                  </div>
-                )
-              })}
+              this section is coming soon...
             </div>
           </div>
         ) : (<h1>loading</h1>)}
