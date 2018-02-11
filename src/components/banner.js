@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import '../styles/banner.scss'
+import ReactPlayer from 'react-player'
 
 class Banner extends React.Component {
   constructor() {
@@ -20,13 +21,30 @@ class Banner extends React.Component {
   }
 
   render() {
-
+    console.log(this.state.data);
     return (
       <div>
         {this.state.data ? (
           <div className="banner">
-            <p className="maintext">{this.state.data.fields.text}</p>
-            <p className="subtext">{this.state.data.fields.subText}</p>
+            <div className="left">
+              <div className="embed song">
+                <h2>{this.state.data.fields.bannerSongTitle}</h2>
+                <ReactPlayer width='100%' height='100%' url={this.state.data.fields.songLink} />
+              </div>
+
+              <div className="embed video">
+                <h2>{this.state.data.fields.bannerVideoTitle}</h2>
+                <ReactPlayer width='100%' height='100%' url={this.state.data.fields.videoLink} />
+              </div>
+            </div>
+            <div className="right">
+              <a className="main-link" target="_blank" href={this.state.data.fields.link}>
+
+                <p className="maintext">{this.state.data.fields.text}</p>
+                <p className="subtext">{this.state.data.fields.subText}</p>
+              </a>
+
+            </div>
           </div>
         ) : (<h1>loading</h1>)}
       </div>
