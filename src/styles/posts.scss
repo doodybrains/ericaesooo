@@ -2,5 +2,29 @@
 #press {
   .container {
     padding: 180px 20px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .post-item {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+    }
   }
 }
