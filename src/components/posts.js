@@ -13,7 +13,7 @@ class Posts extends React.Component {
     axios
       .get(`https://cdn.contentful.com/spaces/${process.env.GATSBY_CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN}&content_type=post`)
       .then((res) => {
-        this.setState({ data: res.data.items[0]})
+        this.setState({ data: res.data.items})
       })
       .catch((error) => {
         this.setState({ data: error})
@@ -21,13 +21,26 @@ class Posts extends React.Component {
   }
 
   render() {
+    const {data} = this.state;
+    let allPosts = null;
+
+    if (data) {
+      allPosts = data;
+    }
+
     return (
       <div id="press" className="section">
         {this.state.data ? (
           <div className="container">
             <h1>Press</h1>
             <div className="item-wrapper">
-              <PostItem data={this.state.data} />
+              {allPosts.map((post, i) => {
+                return (
+                  <div key={i}>
+                    <PostItem id={post.sys.id} data={post} />
+                  </div>
+                );
+              })}
             </div>
           </div>
         ) : (<h1>loading</h1>)}

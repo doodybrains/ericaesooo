@@ -13,7 +13,6 @@ class Shows extends React.Component {
     axios
       .get(`https://cdn.contentful.com/spaces/${process.env.GATSBY_CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN}&content_type=allShows`)
       .then((res) => {
-        console.log(res);
         this.setState({ data: res.data.includes.Entry})
       })
       .catch((error) => {

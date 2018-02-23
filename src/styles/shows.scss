@@ -17,11 +17,13 @@
     padding: 20px;
     text-align: left;
 
-    p {
+    div {
+      text-align: left;
       width: 25%;
     }
 
-    &.link:hover p {
+
+    &.link:hover div {
       color: mediumpurple !important;
     }
   }

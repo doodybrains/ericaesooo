@@ -10,7 +10,8 @@
   }
 
   .post-item {
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+
     h2 {
       font-size: 1.5em;
       margin-bottom: 8px;
@@ -25,6 +26,10 @@
       display: block;
       text-decoration: none;
       color: #000;
+
+      &:hover {
+        color: mediumpurple;
+      }
     }
   }
 }
