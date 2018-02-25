@@ -24,13 +24,13 @@ class ShowItem extends React.Component {
     const {data} = this.state;
 
     return (
-      <a href="" target="_blank" className="show-item">
+      <a href={data && data.link ? data.link : ""} target="_blank" className={data && data.link ? "show-item with-link" : "show-item"}>
         {data &&
-            <span>
+          <span>
             <div>{data.date}</div>
             <div>{data.venue}</div>
             <div>{data.otherPerformers}</div>
-            </span>
+          </span>
         }
       </a>
     )
