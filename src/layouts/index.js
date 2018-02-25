@@ -15,7 +15,6 @@ const TemplateWrapper = ({ children }) => (
       ]}
     >
     <link href="https://fonts.googleapis.com/css?family=Bangers|Ubuntu+Mono:400,400i" rel="stylesheet" />
-
     </Helmet>
     <Header />
     <div>

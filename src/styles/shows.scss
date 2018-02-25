@@ -11,11 +11,14 @@
   .show-item {
     text-decoration: none;
     color: black !important;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 20px;
-    text-align: left;
+
+    span {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 20px;
+      text-align: left;
+    }
 
     div {
       text-align: left;

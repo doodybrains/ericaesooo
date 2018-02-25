@@ -34,23 +34,23 @@
         font-size: .73em;
         font-weight: bold;
       }
-      &.magnify {
+      &.magnify pre {
         color: #46FFD0;
         font-weight: bold;
         font-size: 1.2em;
       }
-      &.turn {
+      &.turn pre {
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
       }
-      &.tilt {
+      &.tilt pre {
         color: #9D0AFF;
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
       }
-      &.back {
+      &.back pre {
         color: #9D0AFF;
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);

@@ -1,12 +1,41 @@
 import React from 'react'
+import axios from 'axios'
+import '../styles/shows.scss'
 
-const ShowItem = (props) => (
-  <a href={props.field.link} target="_blank" className="show-item">
-    <div>{props.field.date}</div>
-    <div>{props.field.venue}</div>
-    <div>{props.field.otherPerformers}</div>
-  </a>
-)
+class ShowItem extends React.Component {
+  constructor() {
+    super()
+    this.state = { data: null, error: null }
+  }
+
+  componentWillMount() {
+    axios
+      .get(`https://cdn.contentful.com/spaces/${process.env.GATSBY_CONTENTFUL_SPACE_ID}/entries/${this.props.id}?access_token=${process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN}`)
+      .then((res) => {
+        console.log(res);
+        this.setState({ data: res.data.fields})
+      })
+      .catch((error) => {
+        this.setState({ data: error})
+      });
+  }
+
+  render() {
+    const {data} = this.state;
+
+    return (
+      <a href="" target="_blank" className="show-item">
+        {data &&
+            <span>
+            <div>{data.date}</div>
+            <div>{data.venue}</div>
+            <div>{data.otherPerformers}</div>
+            </span>
+        }
+      </a>
+    )
+  }
+}
 
 
 export default ShowItem
