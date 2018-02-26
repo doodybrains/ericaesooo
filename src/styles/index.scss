@@ -73,14 +73,22 @@ body {
   background: rgba(255,255,255,.7);
   z-index: 9999;
 
+
   a {
     cursor: pointer;
     display: block;
     padding: 0 20px;
     text-transform: uppercase;
     letter-spacing: .12em;
-    font-size: 2.5em;
     text-decoration: none;
     color: black !important;
+
+    &.link {
+      font-size: 2em;
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
   }
 }

@@ -17,10 +17,17 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 
     .vid {
-      width: 48%;
+      width: 100%;
       margin-bottom: 80px;
+      @media screen and (min-width: 768px) {
+        width: 48%;
+      }
     }
   }
   .watch-wrapper {
