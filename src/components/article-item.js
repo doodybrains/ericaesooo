@@ -1,8 +1,8 @@
 import React from 'react'
 import axios from 'axios'
-import '../styles/shows.scss'
+import '../styles/articles.scss'
 
-class ShowItem extends React.Component {
+class ArticleItem extends React.Component {
   constructor() {
     super()
     this.state = { data: null, error: null }
@@ -23,18 +23,18 @@ class ShowItem extends React.Component {
     const {data} = this.state;
 
     return (
-      <a href={data && data.link ? data.link : ""} target="_blank" className={data && data.link ? "show-item with-link" : "show-item"}>
+      <div>
         {data &&
-          <span>
-            <div>{data.date}</div>
-            <div>{data.venue}</div>
-            <div>{data.otherPerformers}</div>
-          </span>
+          <div className="article-item">
+            <h4>{data.title}</h4>
+            <h3>{data.text}</h3>
+            <a href={data && data.link ? data.link : ""} target="_blank">read more</a>
+          </div>
         }
-      </a>
+      </div>
     )
   }
 }
 
 
-export default ShowItem
+export default ArticleItem

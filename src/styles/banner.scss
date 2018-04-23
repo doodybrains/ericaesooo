@@ -1,14 +1,14 @@
 .banner {
   background: rgba(255,255,255,.5);
   width: 100%;
-  padding: 0 15px;
+  padding: 0px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  // height: calc(100vh - 74px);
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    padding: 50px 15px 0 15px;
   }
 
   .left {
@@ -46,6 +46,13 @@
     text-decoration: none;
     display: block;
     margin-bottom: 30px;
+    max-width: 300px;
+    margin: 40px auto 30px auto;
+    transform: rotate(10deg);
+    @media screen and (min-width: 768px) {
+      margin: -5px auto 30px auto;
+      transform: rotate(10deg);
+    }
   }
 
   p {
@@ -59,8 +66,14 @@
     }
 
     &.subtext {
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin-bottom: 12px;
+      line-height: 1.5em;
+      max-width: 200px;
     }
+  }
+
+  a.main-link:hover p {
+    color: mediumpurple;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Shows from '../components/shows'
-import Posts from '../components/posts'
+import Articles from '../components/articles'
 import Videos from '../components/videos'
 import Songs from '../components/songs'
 import Grid from '../components/grid'
@@ -14,7 +14,7 @@ const IndexPage = () => (
     <Songs />
     <Shows />
     <Grid />
-    <Posts />
+    <Articles />
     <Dolliez />
     <Videos />
   </div>

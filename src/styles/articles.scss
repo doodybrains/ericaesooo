@@ -1,5 +1,5 @@
 
-#press {
+#articles {
   .container {
     padding: 180px 20px;
     text-align: center;
@@ -9,12 +9,14 @@
     }
   }
 
-  .post-item {
+  .article-item {
     margin-bottom: 70px;
 
-    h2 {
+    h4 {
       font-size: 1.5em;
       margin-bottom: 8px;
+      font-weight: bold;
+      color: hotpink;
     }
 
     h3 {

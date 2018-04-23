@@ -35,6 +35,20 @@ h1 {
 h2 {
   font-weight: 400;
   font-style: italic;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+h2:before {
+  content: "~~~~~~";
+  font-size: .7em;
+  font-weight: 100;
+  color: hotpink;
+  width: 100%;
+  position: absolute;
+  top: 14px;
+  left: -7px;
+  overflow: hidden;
 }
 
 h3,

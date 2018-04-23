@@ -84,11 +84,25 @@ body {
     color: black !important;
 
     &.link {
-      font-size: 2em;
+      font-size: 1.75em;
       display: none;
       @media screen and (min-width: 768px) {
         display: block;
       }
+    }
+
+    .link-box {
+      display: block;
+    }
+
+    &:hover {
+      color: #39ff14 !important;
+
+      .link-box {
+        transform:rotate(10deg);
+         -webkit-transform:rotate(10deg);
+      }
+
     }
   }
 }
